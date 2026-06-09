@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Prado | Portfolio</title>
+  <meta name="description" content="Portfolio pessoal com projetos de desenvolvimento web, mobile e automacoes com n8n.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <span class="brand">Arthur Prado - Sistemas para Internet</span>
+        <a class="top-link" href="https://github.com/arthur-prado1" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Portfolio pessoal</p>
+        <h1>Projetos: Web, Mobile e Automações.</h1>
+        <p class="hero-text">
+          Portfólio de 4 projetos publicados com foco em Catalogo Web, Aplicativo Mobile e Automações para WhatsApp.
+        </p>
+        <p class="hero-note">Java, Spring Boot, React Native, Node.js, Firebase e n8n.</p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projetos">Ver projetos</a>
+          <a class="button secondary" href="https://github.com/arthur-prado1" target="_blank" rel="noreferrer">Meu GitHub</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="filters" aria-label="Filtros de projetos">
+        <button class="filter-button is-active" data-filter="todos">Todos</button>
+        <button class="filter-button" data-filter="web">Web</button>
+        <button class="filter-button" data-filter="mobile">Mobile</button>
+        <button class="filter-button" data-filter="automacao">Automacao</button>
+      </section>
+
+      <section id="projetos" class="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projetos</p>
+          <h2>Projetos em Destaque</h2>
+        </div>
+
+        <div id="project-list" class="project-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <template id="project-card-template">
+    <article class="project-card">
+      <div class="card-top">
+        <span class="project-type"></span>
+        <span class="project-year">2026</span>
+      </div>
+
+      <h3 class="project-title"></h3>
+      <p class="project-summary"></p>
+      <p class="project-description"></p>
+      <p class="project-repo"></p>
+
+      <ul class="tag-list"></ul>
+
+      <div class="card-actions">
+        <a class="button primary project-link" target="_blank" rel="noreferrer">Ver repositorio</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>
